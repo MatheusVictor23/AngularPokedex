@@ -1,14 +1,14 @@
 <section>
     <ul class="pokemons">
-        <li *ngFor="let pokemon of pokemons" class="pokemon grass">
-            <span class="number">#{{pokemon.id}}</span>
-            <span class="name">{{pokemon.name}}</span>
-                <div>
-                    <ol class="types">
-                        <li class="type" *ngFor="let Type of pokemon.types">{{Type.type.name}}</li>
-                    </ol>
-                </div>
-            <img class="poke-img" src={{pokemon.sprites.front_default}}>
+        <li *ngFor="let pokemon of pokemons" class="pokemon">
+                <span class="number">#{{pokemon.id}}</span>
+                <span class="name">{{pokemon.name}}</span>
+                    <div>
+                        <ol class="types">
+                            <li *ngFor="let type of pokemon.types" class="type" [ngClass]="type.type.name">{{type.type.name}}</li>
+                        </ol>
+                    </div>
+                <img class="poke-img" src="{{pokemon.sprites.front_default}}">
         </li>
     </ul>
 </section>

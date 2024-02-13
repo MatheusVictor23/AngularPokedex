@@ -7,7 +7,7 @@ import { pokeModel } from '../models/pokeModel';
   providedIn: 'root'
 })
 export class PokeService {
-  private url:string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&&limit=9'
+  private url:string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&&limit=40'
   constructor(private http:HttpClient) { }
 
   getPokemonJson():Observable<pokeRequest>{

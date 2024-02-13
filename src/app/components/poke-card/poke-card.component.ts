@@ -1,8 +1,10 @@
 
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PokeService } from '../../services/poke.service';
 import { pokeModel } from '../../models/pokeModel';
+
 @Component({
   selector: 'app-poke-card',
   standalone: true,
@@ -33,6 +35,7 @@ constructor(private service:PokeService){}
                 types: res.types
               }
               this.pokemons.push(this.pokemon)
+              
             }
           })
         })

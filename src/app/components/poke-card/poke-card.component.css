@@ -13,6 +13,7 @@
     color: #FFF;
     display: flex;
     flex-direction: column;
+    background-color: #79C65A
     }
 .number{
      text-align: right;
@@ -35,7 +36,7 @@
     }
     
  .poke-img{
-     height: 150px;
+     height: 200px;
      display: flex;
      align-self: flex-end;
      max-width: 100%;
@@ -44,7 +45,7 @@
     .grass{background-color:  #79C65A;}
     .fire{background-color:  #b43d19;}
     .water{background-color:  #267de0;}
-    .normal{background-color: #acad9c}
+    .normal{background-color: #94948e}
     .poison{background-color: #96588a;}
     .psychic{background-color: #ec589c;}
     .bug{background-color: #b2bd43;}
