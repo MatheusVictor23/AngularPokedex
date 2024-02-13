@@ -17,7 +17,7 @@ pokemons: pokeModel[] = []
 
 constructor(private service:PokeService){}
 
-  ngOnInit(){
+  ngOnInit():void{
     this.pokeInfo()
   }
   pokeInfo():void{
@@ -32,10 +32,13 @@ constructor(private service:PokeService){}
                 sprites: res.sprites,
                 types: res.types
               }
+              this.pokemons.push(this.pokemon)
             }
           })
         })
       }
     })
   }
+
+  
 }
