@@ -1,1 +1,15 @@
-<p>poke-card works!</p>
+<section>
+    <ul class="poke-list">
+        <li *ngFor="let pokemon of pokemons">
+            <div class="poke-card">
+                <span>{{pokemon.name}}</span>
+                <div>
+                    <img class="poke-img" src={{pokemon.sprites.front_default}}>
+                </div>
+                <ul class="poke-type-list">
+                    <li class= "poke-type" *ngFor="let Type of pokemon.types">{{Type.type.name}}</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</section>
